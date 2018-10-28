@@ -4,7 +4,7 @@
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-    }
+}
 .no-padding{
     padding: 0 !important;
 }
@@ -21,7 +21,6 @@ header a{
     font-family: Arial;
     text-decoration: none;
     box-sizing: border-box;
-    
 }
 
 #hola{
@@ -29,6 +28,7 @@ header a{
     border: 1px solid #85D4B7;
     padding: 30px;
 }
+
 #hola:hover{
     background: 10px  #26b885;
 }
@@ -193,11 +193,13 @@ body{
     
     
 }
+
 #redes{
     background-color: #6DCCAA;
     color: white;
     padding: 15px;
 }
+
 .campaB{
     position: relative;
     top: 30px;
