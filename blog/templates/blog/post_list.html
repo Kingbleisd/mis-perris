@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        
+
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="js/slider.js"></script>
+        <script src="{% static 'js/slider.js' %}"></script>
         <title>Mis Perris 1.0</title>
     </head>
     <body>
@@ -22,10 +22,10 @@
         <header>
         <div class="row start-lg middle-lg center-xs">
             <div  class="col-xs-12 col-lg-4">
-                <img src="img/logo.png" alt="">
+                <img src="{% static 'img/logo.png' %}" alt="">
             </div>
             <div id="hola" class="col-xs-12 col-lg-1">  
-                <a href="index.html">Inicio</a> 
+                <a href="post_list.html">Inicio</a> 
             </div>
             <div id="hola" class="col-xs-12 col-lg-1">
                 <a href="#">Quienes somos</a>
@@ -44,7 +44,7 @@
                 <div class="slideshow">
             <ul class="slider">
                 <li>
-                    <img src="img/adoptados/Apolo.jpg" alt="">
+                    <img src="{% static 'img/adoptados/Apolo.jpg' %}" alt="">
                     <section class="caption">
                         <p> </p>
                         
@@ -52,14 +52,14 @@
                     </section>
                 </li>
                 <li>
-                    <img src="img/adoptados/Duque.jpg" alt="">
+                    <img src="{% static 'img/adoptados/Duque.jpg' %}" alt="">
                     <section class="caption">
                         <p> </p>
                         <p class="posicionT2">"El mejor compañero que un persona puede tener, Duque me acompaña en todos mis viajes es el mejor"</p>
                     </section>
                 </li>
                 <li>
-                    <img src="img/adoptados/Tom.jpg" alt="">
+                    <img src="{% static 'img/adoptados/Tom.jpg' %}" alt="">
                     <section class="caption">
                         <p> </p>
                         <p class="posicionT3">"Estamos felices de tener a Tom en casa. Es un super fiel compañero"</p>
@@ -117,11 +117,11 @@
                         </a3><br>
                         
                         <br>
-                    <img src="img/rescate.jpg" alt="">
+                    <img src="{% static 'img/rescate.jpg' %}" alt="">
                 </div>
                 
                 <div id="separacion2" class="col-xs-12 col-lg-6 start-lg start-xs">
-                    <img src="img/crowfunding.jpg" alt=""><br>
+                    <img src="{% static 'img/crowfunding.jpg' %}" alt=""><br>
                     <a1><b>CROWDFUNDING</b></a1><br>
                     <a2>FINANCIAMIENTO</a2>
                     <p><b>_______</b></p>
@@ -143,17 +143,17 @@
             <ul class="galeria">
             <div class="row">
                 <div id="division1" class="col-xs-4">
-                    <li><a id="i1" href="#img5"><img src="img/rescatados/Oso.jpg" ></a></li>
-                    <li><a id="i2" href="#img4"><img src="img/rescatados/Maya.jpg" ></a></li>
-                    <li><a id="i3" href="#img7"><img src="img/rescatados/Wifi.jpg" ></a></li>
+                    <li><a id="i1" href="#img5"><img src="{% static 'img/rescatados/Oso.jpg' %}" ></a></li>
+                    <li><a id="i2" href="#img4"><img src="{% static 'img/rescatados/Maya.jpg' %}" ></a></li>
+                    <li><a id="i3" href="#img7"><img src="{% static 'img/rescatados/Wifi.jpg' %}" ></a></li>
                 </div>
                 <div id="division2" class="col-xs-4">
-                    <li><a id="i4" href="#img2"><img src="img/rescatados/Chocolate.jpg" ></a></li>
-                    <li><a id="i5" href="#img6"><img src="img/rescatados/Pexel.jpg" ></a></li>
+                    <li><a id="i4" href="#img2"><img src="{% static 'img/rescatados/Chocolate.jpg' %}" ></a></li>
+                    <li><a id="i5" href="#img6"><img src="{% static 'img/rescatados/Pexel.jpg' %}" ></a></li>
                 </div>
                 <div id="division3" class="col-xs-4">
-                    <li><a id="i6" href="#img1"><img src="img/rescatados/Bigotes.jpg" ></a></li>
-                    <li><a id="i7" href="#img3"><img src="img/rescatados/Luna.jpg" ></a></li>
+                    <li><a id="i6" href="#img1"><img src="{% static 'img/rescatados/Bigotes.jpg' %}" ></a></li>
+                    <li><a id="i7" href="#img3"><img src="{% static 'img/rescatados/Luna.jpg' %}" ></a></li>
                 </div>
             </ul>
                 
@@ -162,7 +162,7 @@
             <h3>Bigotes</h3>
             <div class="imagen">
                 
-                <a href=""><img src="img/rescatados/Bigotes.jpg"></a>
+                <a href=""><img src="{% static 'img/rescatados/Bigotes.jpg' %}"></a>
                 <h4>Perro jugueton con muchas ganas de conocerte, 6 Meses de edad</h4>
             </div>
             <a class="close" href="">X</a>
@@ -172,7 +172,7 @@
                 <h3>Chocolate</h3>
                 <div class="imagen">
                     
-                    <a href=""><img src="img/rescatados/Chocolate.jpg"></a>
+                    <a href=""><img src="{% static 'img/rescatados/Chocolate.jpg' %}"></a>
                    <h4>Perro muy travieso, pero con un gran corazón. 1 año de edad</h4>
                 </div>
                 <a class="close" href="">X</a>
@@ -182,7 +182,7 @@
                 <h3>Luna</h3>
                 <div class="imagen">
                     
-                    <a href=""><img src="img/rescatados/Luna.jpg"></a>
+                    <a href=""><img src="{% static 'img/rescatados/Luna.jpg' %}"></a>
                     <h4>Perrita muy tierna, busca familia que le de mucho amor. 1 mes y medio de edad </h4>
                 </div>
                 <a class="close" href="">X</a>
@@ -192,7 +192,7 @@
                 <h3>Maya</h3>
                 <div class="imagen">
                     
-                    <a href=""><img src="img/rescatados/Maya.jpg"></a>
+                    <a href=""><img src="{% static 'img/rescatados/Maya.jpg' %}"></a>
                     <h4>Perrita muy timida, pero le das amor llega a ser un amor. 2 meses de edad</h4>
                 </div>
                 <a class="close" href="">X</a>
@@ -202,7 +202,7 @@
                 <h3>Oso</h3>
                 <div class="imagen">
                     
-                    <a href=""><img src="img/rescatados/Oso.jpg"></a>
+                    <a href=""><img src="{% static 'img/rescatados/Oso.jpg' %}"></a>
                     <h4>Perrito muy cariñoso y tierno a la vez, 5 meses de edad</h4>
                 </div>
                 <a class="close" href="">X</a>
@@ -212,7 +212,7 @@
                 <h3>Pexel</h3>
                 <div class="imagen">
                     
-                    <a href=""><img src="img/rescatados/Pexel.jpg"></a>
+                    <a href=""><img src="{% static 'img/rescatados/Pexel.jpg' %}"></a>
                     <h4>perrito muy pequeño, pero muy inteligente sin duda un gran compañero. 8 meses de edad</h4>
                 </div>
                 <a class="close" href="">X</a>
@@ -222,7 +222,7 @@
                 <h3>Wifi</h3>
                 <div class="imagen">
                     <a href="">&#60</a>
-                    <a href=""><img src="img/rescatados/Wifi.jpg"></a>
+                    <a href=""><img src="{% static  'img/rescatados/Wifi.jpg' %}"></a>
                     <h4>Perrito amoroso y cariñoso un exelente amigo. 5 meses de edad</h4>
                     <a href="">></a>
                 </div>
